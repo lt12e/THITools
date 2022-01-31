@@ -1,0 +1,125 @@
+﻿@page "/RSRSalesUpload"
+
+@using THITools.RepComissions
+@using CsvHelper
+@using BlazorInputFile
+@*@inject RSRSalesReport SalesReport*@
+
+
+
+
+<h1>RSR Sales Upload</h1>
+
+<p> Please choose an RSR Sales report to upload: </p>
+<!--<InputFile OnChange="HandleFileSelected" />-->
+<BlazorInputFile.InputFile OnChange="HandleFileSelected"></BlazorInputFile.InputFile>
+
+@if (file != null)
+{
+    <br />
+    <p><h3>File Metadata</h3></p>
+    <p>Name: @file.Name</p>
+    <p>Size in bytes: @file.Size</p>
+    <p>Last modified date: @file.LastModified.ToShortDateString()</p>
+    <p>Content type: @file.Type</p>
+    <p />
+    <button class="btn btn-primary" @onclick="UploadFile">
+        Upload this File
+    </button>
+    <br />
+    <p><h3>Report Header Information</h3></p>
+    <p><b>Report Type (MTD/YTD):</b> @report.header.runType</p>
+    <p><b>Title:</b> @report.header.title</p>
+    <p><b>Vendor:</b> @report.header.vendor</p>
+    <p><b>Company:</b> @report.header.company</p>
+    <p><b>Run Date/Time:</b> @report.header.runDateTime</p>
+    <p><b>Sales Locations:</b> @report.header.salesLocations</p>
+    <p><b>Sales From Date:</b> @report.header.startDateTime</p>
+    <p><b>Sales To Date:</b> @report.header.endDateTime</p>
+
+    <br />
+
+    <p><h3>Report Body</h3></p>
+    <!--<p>@report.ToString()</p> -->
+    <br />
+    <p><h3>Report Raw Data</h3></p>
+    <pre>@fileContents</pre>
+}
+
+@code {
+    private RSRSalesReport report = new RSRSalesReport();
+    private IFileListEntry file;
+    private string fileContents;
+    private string reportUser;
+    private string errMessage = "";
+
+    //private string
+
+    public async void HandleFileSelected(IFileListEntry[] files) //List of files
+    {
+        file = files.FirstOrDefault(); //first file only
+
+        var reader = new System.IO.StreamReader(file.Data);
+        //var csvReader = new CsvReader(reader);
+        //var records = csvReader.GetRecords<Automobile>();
+
+        /*  Consume the file header using stringReader then consume the remainder of the file using CSV reader*/
+        fileContents = await reader.ReadToEndAsync();
+
+        Console.WriteLine(fileContents); //debug
+
+        try
+        {
+            if (GetReportUser() != null)
+            {
+                report.SetReportFields(fileContents, reportUser);
+            }
+        }
+        catch
+        {
+            Console.WriteLine("Unable to set file data fields");
+            //Logger.LogError("")//Exception thrown: 'System.FormatException' in System.Private.CoreLib.dll
+        }
+
+
+
+        StateHasChanged();
+    }
+
+
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    private string _authMessage;
+
+    private async Task GetReportUser()
+    {
+        var authState = await authenticationStateTask;
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            _authMessage = $"{user.Identity.Name} is authenticated.";
+            reportUser = user.Identity.Name;
+        }
+        else
+        {
+            _authMessage = "The user is NOT authenticated.";
+            //TODO: Remove all access if user is not authenitcated
+        }
+    }
+
+    private void UploadFile()
+    {
+        if (report != null)
+        {
+            //TODO: Upload file via stored procedure
+        }
+        else
+        {
+            errMessage = "No File Selected";
+            //TODO: Throw error
+        }
+    }
+
+}
