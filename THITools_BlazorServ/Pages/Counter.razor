@@ -1,4 +1,6 @@
 ﻿@page "/counter"
+@inject ILogger<Counter> logger;
+
 
 <PageTitle>Counter</PageTitle>
 
@@ -16,6 +18,7 @@
         currentCount++;
         if (currentCount > 3)
         {
+            logger.LogWarning("Current count is too big!");
             throw new InvalidOperationException("Current count is too big!");
         }
     }
