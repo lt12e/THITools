@@ -12,9 +12,26 @@
             <LoginDisplay />
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
         </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
+        <div class="content px-4">
+            <ErrorBoundary>
+                <ChildContent>
+                    @Body
+                </ChildContent>
+                <ErrorContent>
+                    <p class="custom-error">An unexpected error has occurred. Please reload the applciation. </p>
+                    <button class="btn btn-primary" onclick="window.location.reload();">Reload Application</button> 
+                </ErrorContent>
+            </ErrorBoundary>
+        </div>
     </main>
 </div>
+
+@code {
+    ErrorBoundary errorBoundary;
+
+    protected override void OnParametersSet()
+    {
+        // On each page navigation, reset any error state
+        errorBoundary?.Recover();
+    }
+}

@@ -29,3 +29,4 @@ C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THIT
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\BlazorInputFile.dll
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\CsvHelper.dll
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.csproj.CopyComplete
+C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\appsettings.Test.json
