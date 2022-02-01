@@ -1,3 +1,11 @@
+C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.GlobalUsings.g.cs
+C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.AssemblyInfoInputs.cache
+C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.AssemblyInfo.cs
+C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.csproj.CoreCompileInputs.cache
+C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.RazorAssemblyInfo.cache
+C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.RazorAssemblyInfo.cs
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\appsettings.json
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\appsettings.Test.json
@@ -17,15 +25,6 @@ C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\runt
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.GlobalUsings.g.cs
-C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.csproj.AssemblyReference.cache
-C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.AssemblyInfoInputs.cache
-C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.AssemblyInfo.cs
-C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.csproj.CoreCompileInputs.cache
-C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.RazorAssemblyInfo.cache
-C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\THITools_BlazorServ.RazorAssemblyInfo.cs
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\latruax\source\repos\THITools\THITools_BlazorServ\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css

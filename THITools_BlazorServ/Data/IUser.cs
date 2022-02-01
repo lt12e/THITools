@@ -2,7 +2,7 @@
 
 namespace THITools_BlazorServ.Data
 {
-    public interface IUserData
+    public interface IUser
     {
         Task<UserModel?> GetUser(int id);
         Task<IEnumerable<UserModel>> GetUsers();

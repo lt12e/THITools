@@ -3,11 +3,11 @@ using THITools_BlazorServ.Models;
 
 namespace THITools_BlazorServ.Data
 {
-    public class UserData : IUserData
+    public class User : IUser
     {
         private readonly ISqlDataAccess _db;
 
-        public UserData(ISqlDataAccess db)
+        public User(ISqlDataAccess db)
         {
             _db = db;
         }
