@@ -13,6 +13,7 @@
           "Dapper": "2.0.123",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
           "System.Data.SqlClient": "4.8.3",
+          "System.DirectoryServices.AccountManagement": "6.0.2-mauipre.1.22054.8",
           "System.Security.Principal.Windows": "5.0.0"
         },
         "runtime": {
@@ -91,12 +92,27 @@
       },
       "Microsoft.Extensions.Primitives/3.1.0-preview3.19553.2": {},
       "Microsoft.JSInterop/3.1.0-preview3.19553.2": {},
-      "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.14.0": {},
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
-          "System.Security.AccessControl": "4.7.0",
+          "System.Security.AccessControl": "6.0.2-mauipre.1.22054.8",
           "System.Security.Principal.Windows": "5.0.0"
+        }
+      },
+      "Microsoft.Win32.SystemEvents/6.0.2-mauipre.1.22054.8": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
         }
       },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
@@ -133,6 +149,18 @@
           }
         }
       },
+      "System.Configuration.ConfigurationManager/6.0.2-mauipre.1.22054.8": {
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "6.0.2-mauipre.1.22054.8",
+          "System.Security.Permissions": "6.0.2-mauipre.1.22054.8"
+        },
+        "runtime": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        }
+      },
       "System.Data.SqlClient/4.8.3": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -160,13 +188,165 @@
           }
         }
       },
-      "System.Security.AccessControl/4.7.0": {
+      "System.DirectoryServices/6.0.2-mauipre.1.22054.8": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0",
-          "System.Security.Principal.Windows": "5.0.0"
+          "System.Security.AccessControl": "6.0.2-mauipre.1.22054.8",
+          "System.Security.Permissions": "6.0.2-mauipre.1.22054.8"
+        },
+        "runtime": {
+          "lib/net6.0/System.DirectoryServices.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.DirectoryServices.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
         }
       },
-      "System.Security.Principal.Windows/5.0.0": {}
+      "System.DirectoryServices.AccountManagement/6.0.2-mauipre.1.22054.8": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "6.0.2-mauipre.1.22054.8",
+          "System.DirectoryServices": "6.0.2-mauipre.1.22054.8",
+          "System.DirectoryServices.Protocols": "6.0.2-mauipre.1.22054.8",
+          "System.Security.AccessControl": "6.0.2-mauipre.1.22054.8"
+        },
+        "runtime": {
+          "lib/net6.0/System.DirectoryServices.AccountManagement.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.DirectoryServices.AccountManagement.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        }
+      },
+      "System.DirectoryServices.Protocols/6.0.2-mauipre.1.22054.8": {
+        "runtime": {
+          "lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "linux",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          },
+          "runtimes/osx/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "osx",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          },
+          "runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        }
+      },
+      "System.Drawing.Common/6.0.2-mauipre.1.22054.8": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.2-mauipre.1.22054.8"
+        },
+        "runtime": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          },
+          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        }
+      },
+      "System.Security.AccessControl/6.0.2-mauipre.1.22054.8": {
+        "runtime": {
+          "lib/net6.0/System.Security.AccessControl.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Security.AccessControl.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/6.0.2-mauipre.1.22054.8": {
+        "runtime": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        }
+      },
+      "System.Security.Permissions/6.0.2-mauipre.1.22054.8": {
+        "dependencies": {
+          "System.Security.AccessControl": "6.0.2-mauipre.1.22054.8",
+          "System.Windows.Extensions": "6.0.2-mauipre.1.22054.8"
+        },
+        "runtime": {
+          "lib/net6.0/System.Security.Permissions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {},
+      "System.Windows.Extensions/6.0.2-mauipre.1.22054.8": {
+        "dependencies": {
+          "System.Drawing.Common": "6.0.2-mauipre.1.22054.8"
+        },
+        "runtime": {
+          "lib/net6.0/System.Windows.Extensions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Windows.Extensions.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.5408"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -280,13 +460,6 @@
       "path": "microsoft.jsinterop/3.1.0-preview3.19553.2",
       "hashPath": "microsoft.jsinterop.3.1.0-preview3.19553.2.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/3.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
-      "path": "microsoft.netcore.platforms/3.1.0",
-      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
-    },
     "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.14.0": {
       "type": "package",
       "serviceable": true,
@@ -300,6 +473,13 @@
       "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/6.0.2-mauipre.1.22054.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O5UDgaWkdU3O0OQb4fUudBbMCypV1u6lkxv3nBWVlYOUyheTeoQG57xcasOZ+ZMDdMxuPMADu/C63Oz0lJQIdg==",
+      "path": "microsoft.win32.systemevents/6.0.2-mauipre.1.22054.8",
+      "hashPath": "microsoft.win32.systemevents.6.0.2-mauipre.1.22054.8.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
@@ -329,6 +509,13 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "System.Configuration.ConfigurationManager/6.0.2-mauipre.1.22054.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pbT8LiLaRmyjwNTsOp8nq6O5MsGPwPZC8w2ZWNyTTLPC9Veyo1AcxlngYKc1dJm6ALvx8vEcZmxXndFOd6bGNA==",
+      "path": "system.configuration.configurationmanager/6.0.2-mauipre.1.22054.8",
+      "hashPath": "system.configuration.configurationmanager.6.0.2-mauipre.1.22054.8.nupkg.sha512"
+    },
     "System.Data.SqlClient/4.8.3": {
       "type": "package",
       "serviceable": true,
@@ -336,12 +523,54 @@
       "path": "system.data.sqlclient/4.8.3",
       "hashPath": "system.data.sqlclient.4.8.3.nupkg.sha512"
     },
-    "System.Security.AccessControl/4.7.0": {
+    "System.DirectoryServices/6.0.2-mauipre.1.22054.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
-      "path": "system.security.accesscontrol/4.7.0",
-      "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
+      "sha512": "sha512-iwQo0b3MW3rGrRLkjrGesAUg+fNw+e7oIAkGdac6oFjXzPuchXXK7D5WQdf27UXRzZ/+ihNNPdijNVn+J2t8Kw==",
+      "path": "system.directoryservices/6.0.2-mauipre.1.22054.8",
+      "hashPath": "system.directoryservices.6.0.2-mauipre.1.22054.8.nupkg.sha512"
+    },
+    "System.DirectoryServices.AccountManagement/6.0.2-mauipre.1.22054.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MKq7AjAikNoUcdin4bm5/f/BkjYGzkyVmN5qBfoh/1FNKMiDrsbh/BJwfJEp156rJG4t5GEh95rwRep8SR4xYg==",
+      "path": "system.directoryservices.accountmanagement/6.0.2-mauipre.1.22054.8",
+      "hashPath": "system.directoryservices.accountmanagement.6.0.2-mauipre.1.22054.8.nupkg.sha512"
+    },
+    "System.DirectoryServices.Protocols/6.0.2-mauipre.1.22054.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EuL7tYi83XnyleWIcou34A1yR5n78oqwnOB/8qpFQ4P1VjVVh5ZqM8p3vZsroZt3/I7CmAdcdC26klB9sHcu7g==",
+      "path": "system.directoryservices.protocols/6.0.2-mauipre.1.22054.8",
+      "hashPath": "system.directoryservices.protocols.6.0.2-mauipre.1.22054.8.nupkg.sha512"
+    },
+    "System.Drawing.Common/6.0.2-mauipre.1.22054.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b3tlZJpQfqyUTMpts9YaxpnyRc7XrVqxZfiogZAT+YPSV8VsOl24m98O76g9A4AT+GaEMwY0gu4i14d5uIJ2+A==",
+      "path": "system.drawing.common/6.0.2-mauipre.1.22054.8",
+      "hashPath": "system.drawing.common.6.0.2-mauipre.1.22054.8.nupkg.sha512"
+    },
+    "System.Security.AccessControl/6.0.2-mauipre.1.22054.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-voq91h9AKVBj4kYofZC6ZW3jNHghQXfncdGC3QkAVviukCADTPTHjAN5OVxTg9NU78nnUhJZEJ9n3FU5Gfz9ig==",
+      "path": "system.security.accesscontrol/6.0.2-mauipre.1.22054.8",
+      "hashPath": "system.security.accesscontrol.6.0.2-mauipre.1.22054.8.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/6.0.2-mauipre.1.22054.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oz5LvSueQBIF7JFkh9nr/ooMPGdTyCcK9Dr+0v0fQoPqTsYkXWbNrhS8OqwK+tEmlWvB4guOpmXOkjjzqwd3Hg==",
+      "path": "system.security.cryptography.protecteddata/6.0.2-mauipre.1.22054.8",
+      "hashPath": "system.security.cryptography.protecteddata.6.0.2-mauipre.1.22054.8.nupkg.sha512"
+    },
+    "System.Security.Permissions/6.0.2-mauipre.1.22054.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2Jnl693AXeOjKDCnOTGMdSm4tXTcr2YKVStdx5eykIhwLMP0mCpCgd48vjngnSrSIyQEfJthbWINesa64gkXLg==",
+      "path": "system.security.permissions/6.0.2-mauipre.1.22054.8",
+      "hashPath": "system.security.permissions.6.0.2-mauipre.1.22054.8.nupkg.sha512"
     },
     "System.Security.Principal.Windows/5.0.0": {
       "type": "package",
@@ -349,6 +578,13 @@
       "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
       "path": "system.security.principal.windows/5.0.0",
       "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
+    },
+    "System.Windows.Extensions/6.0.2-mauipre.1.22054.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vI4wJ41ffu/wL8eRa6jSf0uJt0zPphfTZ8TsEQF08z+RhG78rdqvOt4jPuBP+Ved5Ai6Bw2kV4fHw1pFRwL2sw==",
+      "path": "system.windows.extensions/6.0.2-mauipre.1.22054.8",
+      "hashPath": "system.windows.extensions.6.0.2-mauipre.1.22054.8.nupkg.sha512"
     }
   }
 }

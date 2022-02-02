@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XZcl1IaE0vhRTqiSjGx+T/wWzUXiiSZ2LLJRYf57CarVOWkY6F3W+yzOu8tjlQBqPYs9eloxaMQyA8VISu9bCg==",
+  "dgSpecHash": "8OjtARR7mVZNx8Zgg82B3FOB/5Utf++1mdwYTZ18rTSVvR035+GnyRR3/KhssvGs5t0IJl5/H/rIpCC+aHdfLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\latruax\\source\\repos\\THITools\\THITools_BlazorServ\\THITools_BlazorServ.csproj",
   "expectedPackageFiles": [
@@ -19,16 +19,24 @@
     "C:\\Users\\latruax\\.nuget\\packages\\microsoft.extensions.options\\3.1.0-preview3.19553.2\\microsoft.extensions.options.3.1.0-preview3.19553.2.nupkg.sha512",
     "C:\\Users\\latruax\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0-preview3.19553.2\\microsoft.extensions.primitives.3.1.0-preview3.19553.2.nupkg.sha512",
     "C:\\Users\\latruax\\.nuget\\packages\\microsoft.jsinterop\\3.1.0-preview3.19553.2\\microsoft.jsinterop.3.1.0-preview3.19553.2.nupkg.sha512",
-    "C:\\Users\\latruax\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\latruax\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\latruax\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.2-mauipre.1.22054.8\\microsoft.win32.systemevents.6.0.2-mauipre.1.22054.8.nupkg.sha512",
     "C:\\Users\\latruax\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\latruax\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\latruax\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\latruax\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.2-mauipre.1.22054.8\\system.configuration.configurationmanager.6.0.2-mauipre.1.22054.8.nupkg.sha512",
     "C:\\Users\\latruax\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",
-    "C:\\Users\\latruax\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
-    "C:\\Users\\latruax\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+    "C:\\Users\\latruax\\.nuget\\packages\\system.directoryservices\\6.0.2-mauipre.1.22054.8\\system.directoryservices.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\system.directoryservices.accountmanagement\\6.0.2-mauipre.1.22054.8\\system.directoryservices.accountmanagement.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\system.directoryservices.protocols\\6.0.2-mauipre.1.22054.8\\system.directoryservices.protocols.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\system.drawing.common\\6.0.2-mauipre.1.22054.8\\system.drawing.common.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\system.security.accesscontrol\\6.0.2-mauipre.1.22054.8\\system.security.accesscontrol.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.2-mauipre.1.22054.8\\system.security.cryptography.protecteddata.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\system.security.permissions\\6.0.2-mauipre.1.22054.8\\system.security.permissions.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\latruax\\.nuget\\packages\\system.windows.extensions\\6.0.2-mauipre.1.22054.8\\system.windows.extensions.6.0.2-mauipre.1.22054.8.nupkg.sha512"
   ],
   "logs": []
 }
